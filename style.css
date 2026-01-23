@@ -1,0 +1,56 @@
+:root {
+--accent: #ef4444;
+--accent-glow: rgba(239, 68, 68, 0.4);
+
+--bg: #0f0c13;
+--card-bg: #1a1625;
+
+--text: #ffffff;
+--text-dim: #9ca3af;
+
+--trans: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body {
+  margin: 0;font-family: sans-serif;
+background: var(--bg);
+  color: white;
+}
+.section {
+    display: none;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.section.active {
+    display: block;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 10, 42, 0.85);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+backdrop-filter: blur(10px);
+}
+
+.nav-logo { font-size: 1.4rem; font-weight: 800; margin-right: auto; }
+        .nav-links { display: flex; gap: 12px; }
+        .nav-link { color: var(--text-dim);
+text-decoration: none; 
+cursor: pointer; 
+font-size: 0.85rem; 
+transition: 0.3s; 
+outline: none;     
+}
+.nav-link.active { color: var(--accent); font-weight: bold; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
