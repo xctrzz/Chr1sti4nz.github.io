@@ -1,95 +1,71 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christianz's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christianz's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body spellcheck="false">
-  <div class="gradientbg"></div>
+  <body spellcheck="false">
+    <div class="gradientbg"></div>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="nav-logo">About Me</div>
-    <div class="nav-links">
-      <a class="nav-link active" onclick="show('home', this)">Home</a>
-      <a class="nav-link" onclick="show('about', this)">About</a>
-      <a class="nav-link" onclick="show('projects', this)">Projects</a>
-    </div>
-  </nav>
-
-  <!-- Sections Container -->
-  <div class="container">
-
-    <!-- Home -->
-    <div id="home" class="section active">
-      <img
-        src="https://i.pinimg.com/736x/52/1a/14/521a146d6b650c99d6d773e1be530c93.jpg"
-        class="profile-img"
-      >
-      <h1 class="centertxt">Christianz</h1>
-      <p class="centertxt">Christianz's Portfolio.</p>
-      <div class="icon-row">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="icon-box float">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="icon-box float">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon-box float">
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-logo">About Me</div>
+      <div class="nav-links">
+        <a class="nav-link active" onclick="show('home', this)">Home</a>
+        <a class="nav-link" onclick="show('about', this)">About</a>
+        <a class="nav-link" onclick="show('projects', this)">Projects</a>
       </div>
-      <div class="card">
-        <h1>Socials</h1>
-        <p>Here are my socials!</p>
-        <a href="https://github.com/Chr1sti4nz" spellcheck="false">
-          <button class="button" spellcheck="false">Github Page</button>
-        </a>
+    </nav>
+
+    <!-- Sections Container -->
+    <div class="container">
+      <!-- Home -->
+      <div id="home" class="section active">
+        <img
+          src="https://i.pinimg.com/736x/52/1a/14/521a146d6b650c99d6d773e1be530c93.jpg"
+          class="profile-img"
+        />
+        <h1 class="centertxt">Christianz</h1>
+        <p class="centertxt">Christianz's Portfolio.</p>
+        <div class="icon-row">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="icon-box float"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="icon-box float"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            class="icon-box float"
+          />
+        </div>
+        <div class="card">
+          <h1>Socials</h1>
+          <p>Here are my socials!</p>
+          <a href="https://github.com/Chr1sti4nz" spellcheck="false">
+            <button class="button" spellcheck="false">Github Page</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div id="about" class="section">
+        <h1>About</h1>
+        <p>Something soon.</p>
+      </div>
+
+      <!-- Projects -->
+      <div id="projects" class="section">
+        <h1>Projects</h1>
+        <p>Projectsnhere soon.</p>
       </div>
     </div>
 
-    <!-- About -->
-    <div id="about" class="section">
-      <h1>About</h1>
-      <p>Something soon.</p>
-    </div>
-
-    <!-- Projects -->
-    <div id="projects" class="section">
-      <h1>Projects</h1>
-      <p>Projectsnhere soon.</p>
-    </div>
-
-  </div>
-
-  <script>
-    function show(sectionId, clickedLink) {
-      document.querySelectorAll('.section').forEach(sec =>
-        sec.classList.remove('active')
-      );
-
-      document.querySelectorAll('.nav-link').forEach(link =>
-        link.classList.remove('active')
-      );
-
-      document.getElementById(sectionId).classList.add('active');
-      clickedLink.classList.add('active');
-    }
-  </script>
-  <script>
-  document.addEventListener('click', (e) => {
-    const el = e.target.closest('.float');
-    if (!el) {
-      document.querySelectorAll('.is-floating')
-        .forEach(i => i.classList.remove('is-floating'));
-      return;
-    }
-
-    const active = el.classList.contains('is-floating');
-    document.querySelectorAll('.is-floating')
-      .forEach(i => i.classList.remove('is-floating'));
-
-    if (!active) el.classList.add('is-floating');
-  })
-    
-  </script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
