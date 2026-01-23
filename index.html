@@ -3,68 +3,89 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Christianz's Portfolio</title>
+    <title>Christianz | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body spellcheck="false">
-    <div class="gradientbg"></div>
+  <body>
+    <div class="blob-c">
+      <div class="shape-blob"></div>
+      <div class="shape-blob one"></div>
+      <div class="shape-blob two"></div>
+    </div>
 
-    <!-- Navigation -->
     <nav>
-      <div class="nav-logo">About Me</div>
-      <div class="nav-links">
-        <a class="nav-link active" onclick="show('home', this)">Home</a>
-        <a class="nav-link" onclick="show('about', this)">About</a>
-        <a class="nav-link" onclick="show('projects', this)">Projects</a>
+      <div class="nav-container">
+        <div class="nav-logo">CHRI<span>STIANZ</span></div>
+        <div class="nav-links">
+          <a class="nav-link active" onclick="show('home', this)">Home</a>
+          <a class="nav-link" onclick="show('about', this)">About</a>
+          <a class="nav-link" onclick="show('projects', this)">Projects</a>
+        </div>
       </div>
     </nav>
 
-    <!-- Sections Container -->
-    <div class="container">
-      <!-- Home -->
-      <div id="home" class="section active">
-        <img
-          src="https://i.pinimg.com/736x/52/1a/14/521a146d6b650c99d6d773e1be530c93.jpg"
-          class="profile-img"
-        />
-        <h1 class="centertxt">Christianz</h1>
-        <p class="centertxt">Christianz's Portfolio.</p>
-        <div class="icon-row">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            class="icon-box float"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            class="icon-box float"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            class="icon-box float"
-          />
-        </div>
-        <div class="card">
-          <h1>Socials</h1>
-          <p>Here are my socials!</p>
-          <a href="https://github.com/Chr1sti4nz" spellcheck="false">
-            <button class="button" spellcheck="false">Github Page</button>
-          </a>
-        </div>
-      </div>
+    <main class="container">
+      <section id="home" class="section active">
+        <div class="hero">
+          <div class="profile-wrapper">
+            <img
+              src="https://i.pinimg.com/736x/52/1a/14/521a146d6b650c99d6d773e1be530c93.jpg"
+              class="profile-img"
+            />
+          </div>
+          <h1 class="glitch">Christianz</h1>
+          <p class="subtitle">Full-stack Developer & Creative Mind</p>
 
-      <!-- About -->
-      <div id="about" class="section">
-        <h1>About</h1>
-        <p>Something soon.</p>
-      </div>
+          <div class="tech-stack">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JS"
+            />
+          </div>
 
-      <!-- Projects -->
-      <div id="projects" class="section">
-        <h1>Projects</h1>
-        <p>Projectsnhere soon.</p>
-      </div>
-    </div>
+          <div class="glass-card">
+            <h3>Connect with me</h3>
+            <p>Let's build something amazing together.</p>
+            <a href="https://github.com/Chr1sti4nz" class="btn-primary"
+              >View GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="glass-card">
+          <h1>About Me</h1>
+          <p>
+            Passionate developer focused on clean code and interactive
+            experiences.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="projects-grid">
+          <div class="glass-card project-card">
+            <div class="project-tag">Web App</div>
+            <h3>Awesome Project</h3>
+            <p>A description of your coolest work goes here.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
