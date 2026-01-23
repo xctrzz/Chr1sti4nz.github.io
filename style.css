@@ -160,6 +160,13 @@ padding: 24px;
   transition: var(--trans);
  color: white; 
   text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link:focus {
+  outline: none;
+}
 }
 a {
   text-decoration: none; /* removes underline */
