@@ -12,12 +12,14 @@
   </head>
 
   <body>
+    <!-- Background Blobs -->
     <div class="blob-c">
       <div class="shape-blob"></div>
       <div class="shape-blob one"></div>
       <div class="shape-blob two"></div>
     </div>
 
+    <!-- Navigation -->
     <nav>
       <div class="nav-container">
         <div class="nav-logo">CHRI<span>STIANZ</span></div>
@@ -30,6 +32,7 @@
     </nav>
 
     <main class="container">
+      <!-- Home Section -->
       <section id="home" class="section active">
         <div class="hero">
           <div class="profile-wrapper">
@@ -59,13 +62,12 @@
           <div class="glass-card">
             <h3>Github Page</h3>
             <p>Look at my Project source codes and stuff.</p>
-            <a href="https://github.com/Chr1sti4nz" class="btn-primary"
-              >View GitHub</a
-            >
+            <a href="https://github.com/Chr1sti4nz" class="btn-primary">View GitHub</a>
           </div>
         </div>
       </section>
 
+      <!-- About Section -->
       <section id="about" class="section">
         <div class="glass-card">
           <h1>About Me</h1>
@@ -76,15 +78,41 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects" class="section">
         <div class="projects-grid">
+
+          <!-- Project Card -->
           <div class="glass-card project-card">
-            <div class="project-tag">Web App</div>
-            <h3>Awesome Project</h3>
-            <p>A description of your coolest work goes here
+            <!-- Project Image -->
+            <div class="cen">
+              <img
+                src="https://i.pinimg.com/736x/52/1a/14/521a146d6b650c99d6d773e1be530c93.jpg"
+                class="server-img"
+              />
+            </div>
+
+            <!-- Project Title -->
+            <h3 class="cen">Solaris</h3>
+
+            <!-- Project Tags -->
+            <div class="cen">
+              <div class="project-tag float">Discord</div>
+              <div class="project-tag float">Minecraft Server</div>
+              <div class="project-tag float">Community</div>
+            </div>
+
+            <!-- Project Description -->
+            <p class="cen">
+              A description of your coolest work goes here.
             </p>
-            <a href="" class="btn-primary cen">Hello</a>
+
+            <!-- Project Button -->
+            <div class="cen">
+              <a href="#" class="btn-primary">View Project</a>
+            </div>
           </div>
+
         </div>
       </section>
     </main>
