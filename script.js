@@ -6,7 +6,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 function show(sectionId, clickedLink) {
   sections.forEach((sec) => sec.classList.remove("active"));
   navLinks.forEach((link) => link.classList.remove("active"));
-
+  
   document.getElementById(sectionId).classList.add("active");
   clickedLink.classList.add("active");
 }
@@ -20,11 +20,11 @@ document.addEventListener("click", (e) => {
       .forEach((i) => i.classList.remove("is-floating"));
     return;
   }
-
+  
   const active = el.classList.contains("is-floating");
   document
     .querySelectorAll(".is-floating")
     .forEach((i) => i.classList.remove("is-floating"));
-
+  
   if (!active) el.classList.add("is-floating");
 });
